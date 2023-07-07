@@ -155,10 +155,18 @@ img {
     border-top: 1px solid rgba(110, 114, 142, 0.25);
 }
 
+.pricing-plan-best .pricing-plan-features {
+    border-color: rgba(225, 225, 225, 0.25);
+}
+
 .pricing-plan-feature {
     padding: 12px;
     border-bottom: 1px solid rgba(110, 114, 142, 0.25);
 }
+.pricing-plan-best .pricing-plan-feature {
+    border-color: rgba(225, 225, 225, 0.25);
+}
+
 
 .button {
     display: inline-block;
