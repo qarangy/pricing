@@ -1,3 +1,9 @@
+:root {
+    --bg-color: #F7F7FE;
+    --text-color: #6E728E;
+}
+
+
 /* GLOBAL */
 html {
     box-sizing: border-box;
@@ -17,11 +23,12 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: bold;
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    color: #222;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 img {
@@ -32,9 +39,9 @@ img {
 /* CONTAINER */
 .container {
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1100px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-left: auto;
     margin-right: auto;
 }
