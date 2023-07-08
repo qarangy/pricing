@@ -73,8 +73,8 @@ img {
 
 .page {
     display: flex;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -82,7 +82,7 @@ img {
 
 .page-title {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     font-size: 32px;
     line-height: normal;
 }
@@ -207,4 +207,64 @@ img {
     background-color: transparent;
     border-color: #fff;
     color: #fff;
+}
+
+.pricing-switch {
+    margin-bottom: 36px;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+}
+
+.switch-label {
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--text-color);
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+.switch-label:hover {
+    opacity: 1;
+}
+
+.switch-control {
+    position: relative;
+    padding: 4px;
+    margin-right: 24px;
+    margin-left: 24px;
+    width: 56px;
+    height: 32px;
+    border-radius: 16px;
+    background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+
+}
+
+.switch-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: margin 0.3s ease;
+}
+
+.payment-input-monthly:checked ~ .switch-control .switch-circle {
+    margin-left: 24px;
+}
+
+.switch-control-annually,
+.switch-control-monthly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.payment-input-annually:checked ~ .switch-control .switch-control-monthly,
+.payment-input-monthly:checked ~ .switch-control .switch-control-annually {
+    z-index: 5;
 }

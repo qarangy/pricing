@@ -22,16 +22,30 @@
         <div class="page container">
             <h1 class="page-title">Our Pricing</h1>
 
-            <div style="margin-bottom: 64px;">Switch</div>
+            <form class="pricing-switch" action="http://echo.htmlacademy.ru" method="GET">
+                <div class="switch">
+                    <input class="payment-input-annually visuallyhidden" type="radio" name="payment_period" value="annually" id="annually-payment-radio">
+
+                    <input class="payment-input-monthly visuallyhidden" type="radio" name="payment_period" value="monthly" id="monthly-payment-radio" checked>
+
+                    <label class="switch-label" for="annually-payment-radio">Annually</label>
+                    <div class="switch-control">
+                        <div class="switch-circle"></div>
+                        <label class="switch-control-annually" for="annually-payment-radio"></label>
+                        <label class="switch-control-monthly" for="monthly-payment-radio"></label>
+                    </div>
+                    <label class="switch-label" for="monthly-payment-radio">Monthly</label>
+                </div>
+            </form>
 
             <div class="pricing">
                 <h2 class="visuallyhidden">Pricing</h2>
                 <div class="pricing-inner">
-                    <section class="pricing-plan">
+                    <section class="pricing-plan" data-payment-annually="199.99" data-payment-monthly="19.99">
                         <h3 class="pricing-title">Basic</h3>
                         <div class="pricing-plan-price">
                             <span class="pricing-plan-currency">$</span>
-                            19.99
+                            <span class="pricing-plan-value">19.99</span>
                         </div>
 
                         <ul class="pricing-plan-features">
@@ -43,11 +57,11 @@
                         <a class="button button-block button-primary" href="#">LEARN MORE</a>
                     </section>
 
-                    <section class="pricing-plan pricing-plan-best">
+                    <section class="pricing-plan pricing-plan-best" data-payment-annually="249.99" data-payment-monthly="24.99">
                         <h3 class="pricing-title">Professional</h3>
                         <div class="pricing-plan-price">
                             <span class="pricing-plan-currency">$</span>
-                            24.99
+                            <span class="pricing-plan-value">24.99</span>
                         </div>
 
                         <ul class="pricing-plan-features">
@@ -59,11 +73,11 @@
                         <a class="button button-block button-white" href="#">LEARN MORE</a>
                     </section>
 
-                    <section class="pricing-plan">
+                    <section class="pricing-plan" data-payment-annually="399.99" data-payment-monthly="39.99">
                         <h3 class="pricing-title">Master</h3>
                         <div class="pricing-plan-price">
                             <span class="pricing-plan-currency">$</span>
-                            39.99
+                            <span class="pricing-plan-value">39.99</span>
                         </div>
 
                         <ul class="pricing-plan-features">
