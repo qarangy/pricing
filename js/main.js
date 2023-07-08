@@ -8,7 +8,7 @@ elsPaymentPeriodRadio.forEach(function (elPaymentPeriodRadio) {
 
     if (period === 'annually') {
       elsPricingPlanValue.forEach(function (elPrice) {
-        elPrice.textContent = elPrice.closest('.pricing-plan').dataset.paymentAnnualy;
+        elPrice.textContent = elPrice.closest('.pricing-plan').dataset.paymentAnnually;
       });
     } else {
       elsPricingPlanValue.forEach(function (elPrice) {
